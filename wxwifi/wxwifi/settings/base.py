@@ -131,6 +131,28 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #
+    # 'rest_framework',
+    #
+    # 'wagtail.wagtailcore',
+    # 'wagtail.wagtailadmin',
+    # 'wagtail.wagtaildocs',
+    # 'wagtail.wagtailsnippets',
+    # 'wagtail.wagtailusers',
+    # 'wagtail.wagtailimages',
+    # 'wagtail.wagtailembeds',
+    # 'wagtail.wagtailsearch',
+    # 'wagtail.wagtailredirects',
+    # 'wagtail.wagtailforms',
+    # 'wagtail.wagtailsites',
+    # 'wagtail.contrib.wagtailapi',
+    # # for wagtailmenus
+    # 'wagtail.contrib.modeladmin',
+    # # for puput
+    # 'wagtail.contrib.wagtailsitemaps',
+    # 'wagtail.contrib.wagtailroutablepage',
+
+
     'wifi',
 )
 
@@ -141,10 +163,11 @@ PUPUT_AS_PLUGIN = True
 # if we're on Wagtail 1.1 or later.
 # NB this is a quick-and-dirty version check that won't work with
 # full generality (double-digit versions, alpha/beta releases)
-from wagtail.wagtailcore import __version__
-if __version__.split('.') > ['1', '0']:
-    INSTALLED_APPS = list(INSTALLED_APPS) + ['wagtail.contrib.wagtailsearchpromotions']
 
+# from wagtail.wagtailcore import __version__
+# if __version__.split('.') > ['1', '0']:
+#     INSTALLED_APPS = list(INSTALLED_APPS) + ['wagtail.contrib.wagtailsearchpromotions']
+#
 
 EMAIL_SUBJECT_PREFIX = '[smartlinkcloud] '
 

@@ -11,5 +11,6 @@ def index(request):
         openId = request.GET.get('openId')
         tid = request.GET.get('tid')
         print('extend is: {0}, openId is: {1}, tid is: {2}'.format(extend, openId, tid))
-        return HttpResponse('extend is: {0}, openId is: {1}, tid is: {2}'.format(extend, openId, tid))
+        # return HttpResponse('extend is: {0}, openId is: {1}, tid is: {2}'.format(extend, openId, tid))
+        return HttpResponse('wifi!')
 

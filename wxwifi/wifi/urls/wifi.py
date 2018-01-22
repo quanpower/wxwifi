@@ -8,7 +8,7 @@ from __future__ import absolute_import, unicode_literals
 
 from django.conf.urls import url
 
-from wechat.views import wifi
+from wifi.views import wifi
 
 urlpatterns = [
     url(r'^index', wifi.index, name='wifi_index'),

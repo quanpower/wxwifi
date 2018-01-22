@@ -18,7 +18,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 from django.contrib import admin
-from django.urls import path
+
 from wifi import urls as wifi_urls
 
 # urlpatterns = [
@@ -30,6 +30,7 @@ from wifi import urls as wifi_urls
 
 urlpatterns = [
     url(r'^django-admin/', include(admin.site.urls)),
+
 
     url(r'^wifi/', include(wifi_urls)),
 
