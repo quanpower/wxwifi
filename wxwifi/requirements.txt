@@ -1,0 +1,7 @@
+Django
+wechatpy
+
+requests
+
+#deploy
+gunicorn

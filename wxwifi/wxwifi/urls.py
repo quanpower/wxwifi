@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from wifi import views as wifi_views  # new
+from wifi import views as wifi_views
 
 urlpatterns = [
-    path('', wifi_views.index),  # new
+    path('', wifi_views.index),
     path('admin/', admin.site.urls),
 ]
