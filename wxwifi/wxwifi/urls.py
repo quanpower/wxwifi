@@ -29,7 +29,7 @@ from wifi import urls as wifi_urls
 
 
 urlpatterns = [
-    url(r'^django-admin/', include(admin.site.urls)),
+    # url(r'^django-admin/', include(admin.site.urls)),
 
 
     url(r'^wifi/', include(wifi_urls)),
