@@ -6,7 +6,7 @@
 
 command = '/root/ENV/wxwifipy3/bin/gunicorn'
 pythonpath = '/root/ENV/wxwifipy3/bin'
-bind = 'unix:/tmp/gunicorn.sock'
+bind = 'unix:/tmp/gunicorn_wxwifi.sock'
 # bind = '0.0.0.0:8000'
 workers = 5
 user = 'root'
