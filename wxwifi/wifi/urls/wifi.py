@@ -12,4 +12,7 @@ from wifi.views import wifi
 
 urlpatterns = [
     url(r'^index', wifi.index, name='wifi_index'),
+    url(r'^list_shops', wifi.list_shops, name='wifi_list_shops'),
+    url(r'^get_shop', wifi.get_shop, name='wifi_get_shop'),
+    url(r'^add_pwd_device', wifi.add_pwd_device, name='wifi_add_pwd_device'),
 ]
